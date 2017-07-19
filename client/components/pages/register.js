@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import {browserHistory} from 'react-router'
+
 import Auth0Lock from 'auth0-lock'
 
 class Register extends Component{

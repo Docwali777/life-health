@@ -27,9 +27,10 @@ app.use(express.static('public'))
 app.use
 
 app.get('/*', (req, res)=>{
-  const filePath = path.resolve(path.join(__dirname, 'public/index.html'))
+  const filePath = path.resolve(__dirname, 'public', 'index.html')
   res.sendFile(filePath)
 })
+
 app.listen(PORT, ()=>{
   console.log('server running');
 })
