@@ -1,6 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const HTMLPlugin = require('html-webpack-plugin');
+const LinkMediaHTMLPlugin = require('link-media-html-webpack-plugin');
+
 module.exports = {
   entry: [
       'webpack-hot-middleware/client?reload=true',

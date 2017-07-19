@@ -21,7 +21,6 @@ this.lock.getUserInfo(authResult.accessToken, function(error, profile) {
         // Handle error
         return;
       }
-      console.log(profile);
 browserHistory.push('/')
       localStorage.setItem('accessToken', authResult.accessToken);
       localStorage.setItem('profile', JSON.stringify(profile));

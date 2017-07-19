@@ -1,6 +1,6 @@
 webpackHotUpdate(0,{
 
-/***/ 399:
+/***/ 401:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,19 +16,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactBootstrap = __webpack_require__(113);
+var _reactRouter = __webpack_require__(308);
 
-var _heart1616465__ = __webpack_require__(503);
+var _auth0Lock = __webpack_require__(206);
 
-var _heart1616465__2 = _interopRequireDefault(_heart1616465__);
-
-var _hillary = __webpack_require__(246);
-
-var _hillary2 = _interopRequireDefault(_hillary);
-
-var _waliGauvin = __webpack_require__(247);
-
-var _waliGauvin2 = _interopRequireDefault(_waliGauvin);
+var _auth0Lock2 = _interopRequireDefault(_auth0Lock);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38,107 +30,77 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Home = function (_Component) {
-  _inherits(Home, _Component);
+var Register = function (_Component) {
+  _inherits(Register, _Component);
 
-  function Home() {
-    _classCallCheck(this, Home);
+  function Register() {
+    var _ref;
 
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Register);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Register.__proto__ || Object.getPrototypeOf(Register)).call.apply(_ref, [this].concat(args))), _this), _this.showLock = function () {
+      _this.lock.show();
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
-  _createClass(Home, [{
+  _createClass(Register, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var _this2 = this;
+
+      this.lock = new _auth0Lock2.default(this.props.clientID, this.props.domain);
+
+      this.lock.on('authenticated', function (authResult) {
+
+        _this2.lock.getUserInfo(authResult.accessToken, function (error, profile) {
+          if (error) {
+            // Handle error
+            return;
+          }
+          _reactRouter.browserHistory.push('/');
+          localStorage.setItem('accessToken', authResult.accessToken);
+          localStorage.setItem('profile', JSON.stringify(profile));
+        });
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this3 = this;
+
       return _react2.default.createElement(
         'div',
-        { className: 'container' },
+        null,
         _react2.default.createElement(
-          'div',
-          { className: 'text-center' },
-          _react2.default.createElement(
-            'h1',
-            null,
-            'Welcome to SaluD/O '
-          ),
-          _react2.default.createElement(
-            'h3',
-            null,
-            'Empowering Individuals Through Knowledge'
-          )
-        ),
-        _react2.default.createElement('hr', null),
-        _react2.default.createElement(
-          'div',
-          { className: '' },
-          _react2.default.createElement('img', { className: 'divMainPic', src: _heart1616465__2.default })
-        ),
-        _react2.default.createElement('hr', null),
-        _react2.default.createElement(
-          _reactBootstrap.Media,
+          'h1',
           null,
-          _react2.default.createElement(
-            _reactBootstrap.Media.Left,
-            { align: 'top' },
-            _react2.default.createElement('img', { width: 200, height: 200, src: _hillary2.default, alt: 'Image' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Media.Body,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.Media.Heading,
-              null,
-              'Top aligned media'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-            )
-          )
+          'Register'
         ),
-        _react2.default.createElement('hr', null),
         _react2.default.createElement(
-          _reactBootstrap.Media,
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.Media.Left,
-            { align: 'top' },
-            _react2.default.createElement('img', { width: 200, height: 200, src: _waliGauvin2.default, alt: 'Image' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Media.Body,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.Media.Heading,
-              null,
-              'Top aligned media'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-            )
-          )
+          'button',
+          { onClick: function onClick() {
+              return _this3.showLock();
+            } },
+          'Register'
         )
       );
     }
   }]);
 
-  return Home;
+  return Register;
 }(_react.Component);
 
-exports.default = Home;
+Register.defaultProps = {
+  clientID: 'MnRA94J210JSNDN3JPhoLb1FQxvydPTh',
+  domain: 'drgauvin.auth0.com'
+};
+exports.default = Register;
 
 /***/ })
 

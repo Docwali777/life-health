@@ -12,7 +12,8 @@ const compiler = webpack(config)
 
 const middleware = webpackMiddleware(compiler, {
   publicPath: config.output.publicPath,
-  contentBase: 'client',
+  contentBase: 'client'
+  // ,
   // stats: {
   //   colors: true,
   //   progress: true,
