@@ -1,0 +1,74 @@
+node_modules
+.DS_Store
+../.babelrc
+	../.bowerrc
+	../.editorconfig
+	../.gitattributes
+	../.gitignore
+	../.localized
+	../.yo-rc.json
+	../BPOL Casa Pediatrics.pdf
+	../Books/
+	../Business Concept.docx
+	../Eloquent JavaScript, 2nd Edition.pdf
+	../File-Metadata-Microservice/
+	../Optimize webpack-app.htm
+	../Optimize webpack-app_files/
+	../Parks, Jimmy - 4-11-2017.pdf
+	../Patient Docs/
+	../Samia Wise.pdf
+	../Screen Shot 2017-01-12 at 10.24.48 PM.png
+	../Screen Shot 2017-03-22 at 2.11.04 PM.png
+	../Screen Shot 2017-04-05 at 7.43.53 AM.png
+	../Screen Shot 2017-04-25 at 12.43.08 PM.png
+	../Screen Shot 2017-05-02 at 8.00.23 AM.png
+	../Screen Shot 2017-06-03 at 9.11.04 PM.png
+	../Screen Shot 2017-06-05 at 9.14.51 PM.png
+	../a-health/.babelrc
+	../a-health/.gitignore
+	../a-health/client/
+	../a-health/images/
+	../a-health/package.json
+	../a-health/public/
+	../a-health/server.js
+	../a-health/webpack.config.js
+	../a-health/webpack.dev.js
+	../a-health/webpack.prod.js
+	../a-health/yarn.lock
+	./
+	../adocslife/
+	../api-build/
+	../auth-redux/.gitignore
+	../auth-redux/ModelsDB/
+	../auth-redux/ROUTES/
+	../auth-redux/src/actions/
+	../auth-redux/src/components/flashMessages/
+	../auth-redux/src/reducers/
+	../auth-redux/src/shared/
+	../auth/
+	../blog/
+	../d3-node/
+	../fcc-voting-app/
+	../fcc-voting/
+	../food/
+	../git-2.10.1-intel-universal-mavericks.pkg
+	../h-salud/
+	../ix/
+	../main.js
+	../mentor-program/
+	../nc-react/
+	../react-nightly/
+	../redux-app/
+	../redux-store-app/
+	../salud-os/
+	../salud/
+	../traversy-node/
+	../v-api/
+	../v2/
+	../vast-badlands-98016/
+	../voting 1.59.01 PM/
+	../voting2/
+	../voting3/
+	../yarn.lock
+	../yelp/
+	../~$siness Concept.docx
