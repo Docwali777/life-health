@@ -12,13 +12,12 @@ const compiler = webpack(config)
 
 const middleware = webpackMiddleware(compiler, {
   publicPath: config.output.publicPath,
-  contentBase: 'client'
-  // ,
-  // stats: {
-  //   colors: true,
-  //   progress: true,
-  //   chunkModules: false
-  // }
+  contentBase: 'client',
+  stats: {
+    colors: true,
+    progress: true,
+    chunkModules: false
+  }
 })
 
 app.use(middleware)

@@ -26,6 +26,7 @@
   },
   "scripts": {
     "webpack": "webpack --env=dev ",
+    "hmr": "nodemon devServer.js",
     "build": "webpack --env=prod --progress --profile --colors ",
     "start": "node server.js"
   }
